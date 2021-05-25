@@ -18,3 +18,22 @@
 
  
 .view,body,html{height:100%}.carousel{height:50%}.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item{height:100%}@media (max-width:776px){.carousel{height:100%}}.page-footer{background-color:#929FBA}
+
+.card-img-top:hover {
+  position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}
+h2 {
+  margin-top: 0px;
+   margin-bottom: 10px;
+   font-family: sans-serif;
+   font-size: 20;
+   background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, rgb(255, 187, 0), #f9a825, #ff5722);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}

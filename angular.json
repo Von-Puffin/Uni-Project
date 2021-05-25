@@ -81,7 +81,9 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "styles.css"
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js"],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -99,6 +101,10 @@
               "**/node_modules/**"
             ]
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     },
