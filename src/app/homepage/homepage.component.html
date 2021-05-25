@@ -1,0 +1,58 @@
+<div id="background" style="text-align: center;">
+    <div class="container">
+          <div class="search">
+            <br>
+            <h1 id="title">Welcome to LandSpeed Records</h1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row g-3" id="centering">
+                <div  class="col-md-6">
+            <div class="input-group mb-3 " id="searchBar">
+                        <input type="text" placeholder="Click button to browse our store" class="form-control">
+            </div>
+            </div> 
+        </div>
+            <button type="button" mat-raised-button color="primary" (click)="searchStart()">Online</button>
+               
+        
+        <br>
+        <br>
+        <div id="loadingSpinner">
+            <ngx-spinner 
+            [fullScreen]= "false"
+            size = "small"
+            template= "<img src='/assets/myGif/oie_16627709ftqjYL.gif'/>">
+        </ngx-spinner>
+        </div>
+    </div>       
+    </div>
+    <button #expoModal type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#expoModal" [hidden]="true">
+        
+      </button>
+      <div class="modal fade" id="expoModal" tabindex="-1" aria-labelledby="expoModal" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h2 class="modal-title" id="expoModalLabel"><b>Welcome to LandSpeed Records Dynamic Id Information Page</b></h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                <div class="modal-body" id="bodytext">
+                    <b><p>Welcome to LandSpeed Records!!</p> <br> <p> 
+                        With the hope of demonstrating our stores extensive range of vinyl records we invite you to create your own peronalised LandSpeed Records from our selection of renown album covers. 
+                        </p> <br> 
+                        <p>To begin just press the search button.  Enjoy. </p>
+                    </b>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+
+          </div>
+      </div>
+</div>
